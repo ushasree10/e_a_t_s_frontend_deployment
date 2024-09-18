@@ -13,7 +13,7 @@ function UserProfile(){
   const [phoneNo, setPhoneNo] = useState('');
 
   useEffect(() => {
-    Axios.get("http://localhost:4000/eats/account/"+id)
+    Axios.get("https://e-a-t-s-backend-deployment.onrender.com/eats/account/"+id)
     .then((res)=>{
         setUsername(res.data.username);
         setDepartment(res.data.department);
